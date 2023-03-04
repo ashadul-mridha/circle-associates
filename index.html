@@ -29,6 +29,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-fullscreen.min.css"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
     <title>Circle Associates</title>
   </head>
@@ -104,11 +109,11 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <h2 class="title">
+              <h2 class="title text-justify">
                 Measure, Improve, Succeed: Monitoring and Evaluation for
                 Results.
               </h2>
-              <p class="sub-title">
+              <p class="sub-title text-justify">
                 CIRCLE is a platform of monitoring, evaluation, research,
                 learning (MERL), and knowledge management (KM) professionals in
                 Bangladesh for sharing knowledge, skills and experiences. It was
@@ -166,7 +171,7 @@
             </div>
             <div class="col-lg-6">
               <h4>Partnership with Capacity Building Service Group (CBSG)</h4>
-              <p>
+              <p class="text-justify">
                 Capacity Building Service Group (CBSG) organized a meeting with
                 CIRCLE Associates on August 30, 2020 to explore possible areas
                 of cooperation. CBSG Chairman Mr. Joyonta Roy presided over the
@@ -232,11 +237,70 @@
           /></a>
         </div>
       </section>
+      <section class="meet-our-team-section">
+        <h2 class="text-center">Meet Our Team</h2>
+        <p class="text-center">
+          Our dedicated to the people who make your business easy.
+        </p>
+        <div class="swipper ashy">
+          <div class="our-team-slider swiper-wrapper">
+            <div class="team swiper-slide">
+              <img src="./assets/images/nazrul-islamnew.jpg" alt="" />
+              <h5>Md. Nazrul Islam</h5>
+              <p>Chairman</p>
+            </div>
+            <div class="team swiper-slide">
+              <img src="./assets/images/bilash_mitra.jpg" alt="" />
+              <h5>Bilash Mitra</h5>
+              <p>Managing Director</p>
+            </div>
+            <div class="team swiper-slide">
+              <img src="./assets/images/zakaria-mohammad.jpg" alt="" />
+              <h5>Zakaria Mohammad</h5>
+              <p>Director</p>
+            </div>
+            <div class="team swiper-slide">
+              <img src="./assets/images/naba-krishna-muni.jpg" alt="" />
+              <h5>Naba Krishna Muni</h5>
+              <p>Director</p>
+            </div>
+            <div class="team swiper-slide">
+              <img src="./assets/images/naba-krishna-muni.jpg" alt="" />
+              <h5>Naba Krishna Muni</h5>
+              <p>Director</p>
+            </div><div class="team swiper-slide">
+              <img src="./assets/images/nazrul-islamnew.jpg" alt="" />
+              <h5>Md. Nazrul Islam</h5>
+              <p>Chairman</p>
+            </div>
+            <div class="team swiper-slide">
+              <img src="./assets/images/bilash_mitra.jpg" alt="" />
+              <h5>Bilash Mitra</h5>
+              <p>Managing Director</p>
+            </div>
+            <div class="team swiper-slide">
+              <img src="./assets/images/zakaria-mohammad.jpg" alt="" />
+              <h5>Zakaria Mohammad</h5>
+              <p>Director</p>
+            </div>
+            <div class="team swiper-slide">
+              <img src="./assets/images/naba-krishna-muni.jpg" alt="" />
+              <h5>Naba Krishna Muni</h5>
+              <p>Director</p>
+            </div>
+          </div>
+          <!-- <div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>  
+          </div> -->
+        </div>
+      </section>
     </main>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -259,12 +323,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script type="text/javascript">
       lightGallery(document.getElementById("our-activities-images"), {
-        plugins: [lgZoom, lgThumbnail,lgRotate,lgFullscreen],
+        plugins: [lgZoom, lgThumbnail, lgRotate, lgFullscreen],
         speed: 500,
         // ... other settings
+      });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".ashy", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
       });
     </script>
   </body>

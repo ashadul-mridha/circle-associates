@@ -5,6 +5,7 @@
   box-sizing: border-box;
   color: #000000;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 a {
   color: #000000;
@@ -72,30 +73,58 @@ section.hero-section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #17965F;
+  background: #17965f;
   padding: 50px 0px;
   border-right: 1px solid white;
 }
-.specialize-container .specialize i{
-    color: #ffffff;
-    font-size: 50px;
+.specialize-container .specialize i {
+  color: #ffffff;
+  font-size: 50px;
 }
-.specialize-container .specialize h5{
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 15px 0px;
+.specialize-container .specialize h5 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 15px 0px;
 }
 /* meeting-with-cbsc section  */
-.meeting-with-cbsc{
-    padding: 80px 0px;
+.meeting-with-cbsc {
+  padding: 80px 0px;
 }
 /* our activities section  */
-.our-activities-images{
+.our-activities-images {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
 }
-
+/* meet-our-team-section */
+.meet-our-team-section {
+  padding: 80px 0px;
+}
+/* .our-team-slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  grid-gap: 20px;
+} */
+.our-team-slider .team img{
+    width: 100%;
+    height: 300px;
+}
+.our-team-slider .team h5{
+    text-align: center;
+    padding-top: 8px;
+    margin: 0px;
+}
+.our-team-slider .team p{
+    text-align: center;
+    padding-top: 8px;
+    margin: 0px;
+}
+/* .swiper-slide{
+    width: 0% !important;
+} */
