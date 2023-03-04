@@ -128,3 +128,31 @@ section.hero-section {
 /* .swiper-slide{
     width: 0% !important;
 } */
+.call-to-action{
+    background: #097C4A;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* footer */
+footer{
+    padding: 50px 0px;
+    background: #dddddd;
+    margin-top: 50px;
+}
+footer .circle-tagline{
+    margin-top: 30px;
+    font-size: 14px;
+}
+.contact-title{
+    font-size: 20px;
+}
+.contacts{
+    font-size: 14px;
+}
+.socials i{
+    font-size: 14px;
+}
+.socials div{
+    margin-left: 5px;
+}
